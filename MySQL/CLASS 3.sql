@@ -1,0 +1,36 @@
+USE BankingDB;
+
+DESCRIBE CUSTOMERS;
+INSERT INTO CUSTOMERS VALUES
+(2,"Lakshita","2008-1-18","Kanunga","lakshitaK@gmail.com","9111122454","2008-1-18");
+
+#(COMMENT)ALTER TABLE CUSTOMERS ADD CustomerID INT PRIMARY KEY;
+INSERT INTO CUSTOMERS VALUES
+(3,"Roshni","2008-10-2","Sanwal","RoshniS@gmail.com","9121122454","2008-10-2");
+
+INSERT INTO CUSTOMERS (CustomerID, FirstName, DOB2,Phone)VALUES
+(4,"Ayushi","2008-4-7","9121122454");
+
+CREATE TABLE ABCD
+(A_ID INT PRIMARY KEY AUTO_INCREMENT,
+A_FNAME VARCHAR(20),
+A_AGE INT);
+INSERT INTO ABCD (A_FNAME,A_AGE)VALUES
+("GOPALI",34);
+
+ALTER TABLE bankingdb.annual_gold_rate ADD COLUMN RECORD INT PRIMARY KEY AUTO_INCREMENT FIRST;
+
+TRUNCATE bankingdb.annual_gold_rate;
+
+INSERT INTO Customers
+(CustomerID, FirstName, LastName, Email, Phone, DOB)
+VALUES
+(101,'Rahul','Sharma','rahul@gmail.com','9876543210','1998-04-15');
+
+INSERT INTO Accounts
+(AccountID, AccountType, Balance)
+VALUES
+(201,'Savings',25000);
+
+DROP TABLE BRANCHES;
+
